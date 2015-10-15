@@ -6,12 +6,12 @@
 #
 
 # make and chdir to dir 
-mdc() {
+mkcd() {
     mkdir $1; 
     cd $1 
 }
 # make dir and move some files into dir
-mdv() {
+mvcd() {
     if [[ ! -d $1 ]]; then
         mkdir $1; 
     fi
